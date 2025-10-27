@@ -3,12 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Mobile nav toggle
   const menuBtn = document.getElementById('menu-btn');
-  const nav = document.getElementById('nav-links');
-  if (menuBtn) {
+  const mobileNav = document.getElementById('mobile-nav');
+  
+  if (menuBtn && mobileNav) {
     menuBtn.addEventListener('click', () => {
-      nav.classList.toggle('hidden');
+      mobileNav.classList.toggle('hidden');
     });
   }
+
+  // Close mobile nav when clicking outside
+  document.addEventListener('click', (e) => {
+    if (mobileNav && !mobileNav.contains(e.target) && !menuBtn.contains(e.target)) {
+      mobileNav.classList.add('hidden');
+    }
+  });
 
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

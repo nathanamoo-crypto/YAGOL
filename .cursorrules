@@ -1,0 +1,56 @@
+# YAGOL Brand Assets
+
+Always use these YAGOL brand assets and styling:
+
+## Brand Assets Location
+- **Primary Logo:** `assets/logo-full.svg`
+- **Icon Logo:** `assets/logo-icon.svg`
+- **Favicon:** `assets/favicon.png`
+
+## Brand Colors (Tailwind classes)
+- `yagolRed`: #C1272D
+- `yagolSilver`: #C0C0C0
+- `yagolGold`: #FFD700
+- `yagolDark`: #0A0A0A
+
+## Typography
+- **Headings:** Montserrat (font-heading class)
+- **Body Text:** Lato (font-body class)
+
+## Header Structure
+Always use this header structure in HTML files:
+
+```html
+<header class="flex justify-between items-center p-4 bg-yagolDark text-white sticky top-0 z-50 shadow-lg">
+  <a href="index.html" class="flex items-center gap-2">
+    <img src="assets/logo-full.svg" alt="YAGOL Logo" class="h-10 object-contain transition hover:scale-105" />
+  </a>
+  <nav id="nav-links" class="hidden md:flex space-x-6">
+    <a href="index.html" class="hover:text-yagolRed transition">Home</a>
+    <a href="about.html" class="hover:text-yagolRed transition">About</a>
+    <a href="contact.html" class="hover:text-yagolRed transition">Contact</a>
+  </nav>
+  
+  <!-- Mobile Menu Button -->
+  <button id="menu-btn" class="md:hidden text-white">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+  
+  <!-- Mobile Navigation -->
+  <div id="mobile-nav" class="hidden md:hidden absolute top-full left-0 right-0 bg-yagolDark p-4 shadow-lg">
+    <a href="index.html" class="block py-2 hover:text-yagolRed transition">Home</a>
+    <a href="about.html" class="block py-2 hover:text-yagolRed transition">About</a>
+    <a href="contact.html" class="block py-2 hover:text-yagolRed transition">Contact</a>
+  </div>
+</header>
+```
+
+## Development Guidelines
+- Always use brand colors from the Tailwind config
+- Follow the established layout and spacing patterns
+- Maintain responsive design (mobile-first)
+- Use the custom YAGOL logo assets, not inline SVGs
+- Keep header consistent across all pages
+
