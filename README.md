@@ -188,7 +188,7 @@ This is the frontend phase of the YAGOL website. Future phases will include:
 
 ## 📄 License
 
-© 2025 YAGOL. The Fire Behind Every Goal.
+© 2025 YAGOL. The Fire Behind Every Goal; Your Ambition, Your Dream, YAGOL.
 
 All rights reserved by Nathaniel Nana Yaw Kyereboah Amoo & Deladem Kodzo Avudzega.
 
