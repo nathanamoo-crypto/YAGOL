@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Custom blend modes for YAGOL logos */
+  .logo-blend-dark {
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(193, 39, 45, 0.6));
+  }
+  
+  .logo-blend-light {
+    filter: brightness(0.8) sepia(1) hue-rotate(-10deg) saturate(1.5) contrast(1.2);
+  }
+  
+  .logo-blend-footer {
+    filter: brightness(0.9) sepia(0.3) hue-rotate(350deg) saturate(1.2);
+    mix-blend-mode: screen;
+  }
+  
+  .logo-blend-hero {
+    filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.5)) 
+            drop-shadow(0 0 15px rgba(193, 39, 45, 0.8))
+            brightness(1.1) 
+            contrast(1.1);
+  }
+  
+  .logo-hover-dark:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(193, 39, 45, 0.9));
+    transform: scale(1.05);
+  }
+}
+
