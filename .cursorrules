@@ -47,10 +47,19 @@ Always use this header structure in HTML files:
 </header>
 ```
 
+## Logo Blend Classes
+Use these custom classes for proper image blending:
+- `logo-blend-dark` - Inverts colors and adds red glow (for dark backgrounds like header)
+- `logo-blend-light` - Adds warm sepia/gold tone (for light backgrounds)
+- `logo-blend-footer` - Soft blend with sepia/gold for footer dark background
+- `logo-blend-hero` - Enhanced glow and brightness for hero sections
+- `logo-hover-dark` - Hover effect with enhanced glow for dark backgrounds
+
 ## Development Guidelines
 - Always use brand colors from the Tailwind config
 - Follow the established layout and spacing patterns
 - Maintain responsive design (mobile-first)
 - Use the custom YAGOL logo assets, not inline SVGs
 - Keep header consistent across all pages
+- Apply appropriate blend classes to logos for seamless background integration
 
