@@ -1,4 +1,4 @@
-# 🔥 YAGOL - The Fire Behind Every Goal
+# 🔥 YAGOL - The Fire Behind Every Goal; Your Ambition. Your Game. YAGOL.
 
 A motivational brand website empowering athletes and dreamers worldwide to ignite their passion, push their limits, and stay loyal to their purpose.
 
