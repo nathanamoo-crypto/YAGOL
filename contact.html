@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - YAGOL</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +24,7 @@
     <!-- Header -->
     <header class="flex justify-between items-center p-4 bg-yagolDark text-white sticky top-0 z-50 shadow-lg">
         <a href="index.html" class="flex items-center gap-2">
-            <img src="assets/logo-full.svg" alt="YAGOL Logo" class="h-10 object-contain transition hover:scale-105" />
+            <img src="assets/logo-icon.svg" alt="YAGOL Logo" class="h-10 object-contain transition hover:scale-105" />
         </a>
         <nav id="nav-links" class="hidden md:flex space-x-6">
             <a href="index.html" class="hover:text-yagolRed transition">Home</a>
@@ -45,8 +48,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-yagolRed to-yagolDark text-white py-20">
-        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+    <section class="bg-gradient-to-br from-yagolRed to-yagolDark text-white py-20 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-yagolRed/90 to-yagolDark/90"></div>
+        <div class="container mx-auto px-6 text-center relative z-10" data-aos="fade-up">
             <h1 class="font-heading font-bold text-4xl md:text-6xl mb-4">
                 Connect With Us
             </h1>
@@ -145,13 +149,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-yagolSilver py-8">
+    <footer class="bg-yagolDark text-yagolSilver py-8 border-t-2 border-yagolRed/20">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L2 22h20L12 2z"/>
-                    </svg>
+                    <img src="assets/logo-icon.svg" alt="YAGOL Logo" class="w-8 h-8 object-contain" />
                     <span class="font-heading font-bold text-lg">YAGOL</span>
                 </div>
                 <div class="flex space-x-6 mb-4 md:mb-0">
