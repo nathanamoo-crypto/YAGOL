@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAGOL - The Fire Behind Every Goal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Compiled Tailwind CSS -->
+    <link rel="stylesheet" href="./dist/css/style.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-body text-yagolDark bg-white">
+    
+    <!-- Header -->
+    <header class="bg-yagolRed text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+                        <!-- Upward Arrow / Flame -->
+                        <path d="M12 2L2 22h20L12 2z"/>
+                        <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span class="font-heading font-bold text-2xl">YAGOL</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div id="nav-links" class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-yagolGold transition">Home</a>
+                    <a href="about.html" class="hover:text-yagolGold transition">About</a>
+                    <a href="contact.html" class="hover:text-yagolGold transition">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-nav" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 hover:text-yagolGold transition">Home</a>
+                <a href="about.html" class="block py-2 hover:text-yagolGold transition">About</a>
+                <a href="contact.html" class="block py-2 hover:text-yagolGold transition">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-yagolRed to-yagolDark text-white py-20 md:py-32" data-aos="fade-up">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center mb-6">
+                <svg class="w-20 h-20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 22h20L12 2z"/>
+                </svg>
+            </div>
+            <h1 class="font-heading font-bold text-4xl md:text-6xl mb-4">
+                The Fire Behind Every Goal
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-yagolSilver">
+                Ignite your passion, push your limits, stay loyal to your dreams
+            </p>
+            <a href="about.html" class="inline-block bg-yagolGold text-yagolDark font-heading font-bold px-8 py-3 rounded-lg hover:bg-opacity-90 transition transform hover:scale-105">
+                Ignite Your Fire
+            </a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-8 text-yagolRed">
+                    Meet YAGOL
+                </h2>
+                <p class="text-lg text-gray-700 text-center mb-8">
+                    YAGOL is more than a brand — it's a movement that empowers athletes and dreamers worldwide to rise above challenges, push their limits, and stay loyal to their purpose.
+                </p>
+                <p class="text-lg text-gray-700 text-center mb-8">
+                    Born from the heart of Ghana, inspired by <em>Ogya</em> (Twi for "Fire"), YAGOL represents the burning passion that drives us to achieve greatness against all odds.
+                </p>
+                <div class="text-center">
+                    <a href="about.html" class="inline-block text-yagolRed font-heading font-bold hover:underline">
+                        Learn More About Our Story →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Five Pillars Preview -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-12 text-yagolDark">
+                Our Five Pillars
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Yearn -->
+                <div class="bg-gradient-to-br from-yagolRed to-yagolDark text-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="text-4xl mb-3">🌊</div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Yearn</h3>
+                    <p class="text-sm opacity-90">The deep desire that sparks every journey</p>
+                </div>
+                
+                <!-- Ambition -->
+                <div class="bg-gradient-to-br from-yagolRed to-yagolDark text-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-4xl mb-3">⭐</div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Ambition</h3>
+                    <p class="text-sm opacity-90">The drive to reach higher, dream bigger</p>
+                </div>
+                
+                <!-- Grit -->
+                <div class="bg-gradient-to-br from-yagolRed to-yagolDark text-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-4xl mb-3">👊</div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Grit</h3>
+                    <p class="text-sm opacity-90">The unyielding determination to persist</p>
+                </div>
+                
+                <!-- Overcome -->
+                <div class="bg-gradient-to-br from-yagolRed to-yagolDark text-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-4xl mb-3">🏔️</div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Overcome</h3>
+                    <p class="text-sm opacity-90">Rising above every obstacle in your path</p>
+                </div>
+                
+                <!-- Loyalty -->
+                <div class="bg-gradient-to-br from-yagolRed to-yagolDark text-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-4xl mb-3">🤝</div>
+                    <h3 class="font-heading font-bold text-xl mb-2">Loyalty</h3>
+                    <p class="text-sm opacity-90">Staying true to your purpose and community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-yagolDark text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">
+                Ready to Ignite Your Fire?
+            </h2>
+            <p class="text-xl mb-8 text-yagolSilver" data-aos="fade-up" data-aos-delay="100">
+                Join the YAGOL movement and transform your goals into reality.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                <a href="about.html" class="inline-block bg-yagolRed text-white font-heading font-bold px-8 py-3 rounded-lg hover:bg-opacity-90 transition">
+                    Learn More
+                </a>
+                <a href="contact.html" class="inline-block bg-yagolGold text-yagolDark font-heading font-bold px-8 py-3 rounded-lg hover:bg-opacity-90 transition">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-yagolSilver py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 22h20L12 2z"/>
+                    </svg>
+                    <span class="font-heading font-bold text-lg">YAGOL</span>
+                </div>
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="hover:text-yagolGold transition">Instagram</a>
+                    <a href="#" class="hover:text-yagolGold transition">Twitter</a>
+                    <a href="#" class="hover:text-yagolGold transition">LinkedIn</a>
+                    <a href="#" class="hover:text-yagolGold transition">Facebook</a>
+                </div>
+                <p class="text-sm">© 2025 YAGOL. The Fire Behind Every Goal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+        
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        if (menuBtn && mobileNav) {
+            menuBtn.addEventListener('click', () => {
+                mobileNav.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
+
