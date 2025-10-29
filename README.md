@@ -80,6 +80,35 @@ yagol/
 
 **The compiled CSS file (`dist/css/style.css`) is NOT tracked in git.** You **MUST** build the CSS after cloning the repository, otherwise the website will appear completely unstyled (no colors, layout, or Tailwind styles).
 
+### 🏃 Quick Start: Running Locally
+
+**Step-by-step commands:**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/nathanamoo-crypto/YAGOL.git
+cd YAGOL
+
+# 2. Install dependencies (Node.js required)
+npm install
+
+# 3. Build the CSS (REQUIRED - don't skip this!)
+npm run build
+
+# 4. Start a local server (choose one method below)
+```
+
+**Starting a Local Server (pick one):**
+
+| Method | Command | URL |
+|--------|---------|-----|
+| **Python** | `python -m http.server 8000` | http://localhost:8000 |
+| **Node.js** | `npx http-server` | http://localhost:8080 |
+| **VS Code** | Install "Live Server" extension, right-click `index.html` → "Open with Live Server" | Auto-opens |
+| **Direct open** | Double-click `index.html` | ⚠️ Some features may not work |
+
+**That's it!** Open the URL in your browser to view the website.
+
 ### Prerequisites
 
 - **Node.js** (v14 or higher) installed on your system
