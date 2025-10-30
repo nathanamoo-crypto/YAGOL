@@ -11,6 +11,9 @@ module.exports = {
         // Fiery Red and Gold only
         yagolRed: '#FF3737',
         yagolGold: '#FFD700',
+        // Accents for improved UI (from user's provided palette variants)
+        fieryOrange: '#FF9900',
+        softGold: '#F8E231',
       },
     },
   },
