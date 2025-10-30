@@ -8,10 +8,9 @@ module.exports = {
         body: ['Lato', 'Inter', 'sans-serif'],
       },
       colors: {
-        yagolRed: '#C1272D',
-        yagolSilver: '#C0C0C0',
+        // Fiery Red and Gold only
+        yagolRed: '#FF3737',
         yagolGold: '#FFD700',
-        yagolDark: '#0A0A0A',
       },
     },
   },
